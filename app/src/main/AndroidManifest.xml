@@ -10,17 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LiveAttendanceApp">
         <activity
-            android:name=".views.forgotpass.ForgotPasswordActivity"
-            android:exported="true" />
-        <activity android:name=".views.login.LoginActivity" />
-        <activity android:name=".views.splash.SplashActivity" />
-        <activity android:name=".MainActivity">
+            android:name=".views.main.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".views.forgotpass.ForgotPasswordActivity"
+            android:exported="true" />
+        <activity android:name=".views.login.LoginActivity" />
+        <activity android:name=".views.splash.SplashActivity" />
     </application>
 
 </manifest>
