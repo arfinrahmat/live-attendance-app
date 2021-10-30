@@ -49,61 +49,60 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="20dp"
-                android:padding="16dp"
+                android:background="@drawable/bg_profile"
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
-                android:background="@drawable/bg_profile">
+                android:padding="16dp">
 
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/iv_profile"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@android:color/darker_gray"/>
+                    android:src="@android:color/darker_gray" />
 
                 <TextView
                     android:id="@+id/tv_name_profile"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
                     android:text="@string/default_text"
-                    android:textStyle="bold"
-                    android:textSize="24sp"
                     android:textColor="@android:color/black"
-                    android:layout_marginTop="16dp"/>
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/email_profile"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/default_text"
-                    android:textSize="16sp"/>
+                    android:textSize="16sp" />
 
                 <Button
                     android:id="@+id/btn_change_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
                     android:background="@drawable/bg_btn_primary"
                     android:text="@string/change_password"
-                    android:textColor="@android:color/white"
-                    android:layout_marginTop="40dp"/>
+                    android:textColor="@android:color/white" />
 
                 <Button
                     android:id="@+id/btn_change_language"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
                     android:background="@drawable/bg_btn_primary"
                     android:text="@string/change_language"
-                    android:textColor="@android:color/white"
-                    android:layout_marginTop="20dp"/>
+                    android:textColor="@android:color/white" />
 
                 <Button
                     android:id="@+id/btn_logout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
                     android:background="@drawable/bg_logout"
                     android:text="@string/logout"
-                    android:textColor="@android:color/white"
-                    android:layout_marginTop="20dp"/>
-
+                    android:textColor="@android:color/white" />
 
 
             </LinearLayout>
