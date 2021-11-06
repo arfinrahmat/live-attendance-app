@@ -16,6 +16,13 @@ class ForgotPasswordActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         init()
+        onClick()
+    }
+
+    private fun onClick() {
+        binding.tbForgotPassword.setOnClickListener {
+            finish()
+        }
     }
 
     private fun init() {
