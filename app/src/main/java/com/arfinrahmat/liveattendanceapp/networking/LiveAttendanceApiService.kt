@@ -1,9 +1,6 @@
 package com.arfinrahmat.liveattendanceapp.networking
 
-import com.arfinrahmat.liveattendanceapp.model.AttendanceResponse
-import com.arfinrahmat.liveattendanceapp.model.ForgotPasswordResponse
-import com.arfinrahmat.liveattendanceapp.model.HistoryResponse
-import com.arfinrahmat.liveattendanceapp.model.LoginResponse
+import com.arfinrahmat.liveattendanceapp.model.*
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import retrofit2.Call
@@ -32,4 +29,8 @@ interface LiveAttendanceApiService {
                              @Query("from") fromDate: String,
                              @Query("to") toDate: String
     ): Call<HistoryResponse>
+
+    @Headers("Accept: application/json", "Content-Type: application/json")
+    @POST("auth/logout")
+    fun logoutRequest(@Header("Authorization") token: String): Call<LogoutResponse>
 }
