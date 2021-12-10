@@ -8,9 +8,7 @@
     <string name="history">History</string>
     <string name="attendance">Attendance</string>
     <string name="profile">Profile</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="default_text">-</string>
+    <string name="default_text" translatable="false">-</string>
     <string name="your_photo">Your Photo</string>
     <string name="check_in">Check-In</string>
     <string name="check_out">Check-Out</string>
