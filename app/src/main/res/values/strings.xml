@@ -35,4 +35,6 @@
     <string name="success_check_out">Success Check Out</string>
     <string name="something_wrong">Something Wrong</string>
     <string name="your_already_present">Your Already Present</string>
+    <string name="your_password_has_been_update">Your Password Has Been Update</string>
+    <string name="your_password_didnt_match">Your Password Didn\'t Match</string>
 </resources>
