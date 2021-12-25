@@ -36,5 +36,5 @@ interface LiveAttendanceApiService {
 
     @Headers("Accept: application/json", "Content-Type: application/json")
     @POST("auth/password/reset")
-    fun changePassword(@Header("Authorization") token: String): Call<ChangePasswordResponse>
+    fun changePassword(@Header("Authorization") token: String, changePassRequestString: String): Call<ChangePasswordResponse>
 }

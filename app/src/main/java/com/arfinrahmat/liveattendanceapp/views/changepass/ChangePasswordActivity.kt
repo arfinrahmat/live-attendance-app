@@ -109,30 +109,24 @@ class ChangePasswordActivity : AppCompatActivity() {
     }
 
     private fun checkValidation(oldPass: String, newPass: String, confirmNewPass: String): Boolean {
-        when {
-            oldPass.isEmpty() -> {
-                binding.etOldPassword.error = getString(R.string.please_field_your_password)
-                binding.etOldPassword.requestFocus()
-            }
-            newPass.isEmpty() -> {
-                binding.etNewPassword.error = getString(R.string.please_field_your_password)
-                binding.etNewPassword.requestFocus()
-            }
-            confirmNewPass.isEmpty() -> {
-                binding.etConfirmNewPassword.error = getString(R.string.please_field_your_password)
-                binding.etConfirmNewPassword.requestFocus()
-            }
-            newPass != confirmNewPass -> {
-                binding.etNewPassword.error = getString(R.string.your_password_didnt_match)
-                binding.etNewPassword.requestFocus()
-                binding.etConfirmNewPassword.error = getString(R.string.your_password_didnt_match)
-                binding.etConfirmNewPassword.requestFocus()
-            }
-            else -> {
-                binding.etNewPassword.error = null
-                binding.etConfirmNewPassword.error = null
-                return true
-            }
+        if (oldPass.isEmpty()){
+            binding.etOldPassword.error = getString(R.string.please_field_your_password)
+            binding.etOldPassword.requestFocus()
+        }else if (newPass.isEmpty()){
+            binding.etNewPassword.error = getString(R.string.please_field_your_password)
+            binding.etNewPassword.requestFocus()
+        }else if (confirmNewPass.isEmpty()){
+            binding.etConfirmNewPassword.error = getString(R.string.please_field_your_password)
+            binding.etConfirmNewPassword.requestFocus()
+        }else if (newPass != confirmNewPass){
+            binding.etNewPassword.error = getString(R.string.your_password_didnt_match)
+            binding.etNewPassword.requestFocus()
+            binding.etConfirmNewPassword.error = getString(R.string.your_password_didnt_match)
+            binding.etConfirmNewPassword.requestFocus()
+        }else {
+            binding.etNewPassword.error = null
+            binding.etConfirmNewPassword.error = null
+            return true
         }
         return false
     }
